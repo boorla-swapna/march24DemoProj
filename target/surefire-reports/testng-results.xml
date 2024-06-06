@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-09T09:46:11 CDT" name="Suite" finished-at="2024-05-09T09:46:28 CDT" duration-ms="16509">
+    <groups>
+    </groups>
+    <test started-at="2024-05-09T09:46:11 CDT" name="Test" finished-at="2024-05-09T09:46:28 CDT" duration-ms="16509">
+      <class name="tests.SDFCLogin">
+        <test-method is-config="true" signature="doConfigReport()[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:11 CDT" name="doConfigReport" finished-at="2024-05-09T09:46:11 CDT" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doConfigReport -->
+        <test-method is-config="true" signature="preConditions(java.lang.reflect.Method)[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:11 CDT" name="preConditions" finished-at="2024-05-09T09:46:14 CDT" duration-ms="2415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SDFCLogin.verifyLoginErrorMessage_TC01() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConditions -->
+        <test-method is-config="true" signature="preConditions(java.lang.reflect.Method)[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:11 CDT" name="preConditions" finished-at="2024-05-09T09:46:14 CDT" duration-ms="2423" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void tests.SDFCLogin.ValidateLoginErrorMessage_TC4B() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConditions -->
+        <test-method is-config="true" signature="preConditions(java.lang.reflect.Method)[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:11 CDT" name="preConditions" finished-at="2024-05-09T09:46:14 CDT" duration-ms="2415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void tests.SDFCLogin.verifyForgotPassword_TC4A() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConditions -->
+        <test-method signature="verifyLoginErrorMessage_TC01()[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:14 CDT" name="verifyLoginErrorMessage_TC01" finished-at="2024-05-09T09:46:17 CDT" duration-ms="3445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginErrorMessage_TC01 -->
+        <test-method signature="verifyForgotPassword_TC4A()[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:14 CDT" name="verifyForgotPassword_TC4A" finished-at="2024-05-09T09:46:17 CDT" duration-ms="3295" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Password reset message page is displayed. An email associated with the <username> account is sent. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Password reset message page is displayed. An email associated with the <username> account is sent. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at pages.LoginPage.verifyPasswordResetMessagePageIsDisplayed(LoginPage.java:106)
+at tests.SDFCLogin.verifyForgotPassword_TC4A(SDFCLogin.java:128)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPassword_TC4A -->
+        <test-method signature="ValidateLoginErrorMessage_TC4B()[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:14 CDT" name="ValidateLoginErrorMessage_TC4B" finished-at="2024-05-09T09:46:16 CDT" duration-ms="2608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateLoginErrorMessage_TC4B -->
+        <test-method is-config="true" signature="postConditions(java.lang.reflect.Method)[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:16 CDT" name="postConditions" finished-at="2024-05-09T09:46:16 CDT" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void tests.SDFCLogin.ValidateLoginErrorMessage_TC4B() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postConditions -->
+        <test-method is-config="true" signature="preConditions(java.lang.reflect.Method)[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:16 CDT" name="preConditions" finished-at="2024-05-09T09:46:18 CDT" duration-ms="1395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SDFCLogin.verifyLoginToSalesForce_TC02() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConditions -->
+        <test-method is-config="true" signature="postConditions(java.lang.reflect.Method)[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:17 CDT" name="postConditions" finished-at="2024-05-09T09:46:18 CDT" duration-ms="603" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SDFCLogin.verifyLoginErrorMessage_TC01() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postConditions -->
+        <test-method is-config="true" signature="postConditions(java.lang.reflect.Method)[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:17 CDT" name="postConditions" finished-at="2024-05-09T09:46:17 CDT" duration-ms="248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void tests.SDFCLogin.verifyForgotPassword_TC4A() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postConditions -->
+        <test-method is-config="true" signature="preConditions(java.lang.reflect.Method)[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:17 CDT" name="preConditions" finished-at="2024-05-09T09:46:19 CDT" duration-ms="1343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SDFCLogin.verifyRemeberMeCheckBox_TC03() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConditions -->
+        <test-method signature="verifyLoginToSalesForce_TC02()[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:18 CDT" name="verifyLoginToSalesForce_TC02" finished-at="2024-05-09T09:46:24 CDT" duration-ms="6697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginToSalesForce_TC02 -->
+        <test-method signature="verifyRemeberMeCheckBox_TC03()[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:19 CDT" name="verifyRemeberMeCheckBox_TC03" finished-at="2024-05-09T09:46:27 CDT" duration-ms="8732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRemeberMeCheckBox_TC03 -->
+        <test-method is-config="true" signature="postConditions(java.lang.reflect.Method)[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:24 CDT" name="postConditions" finished-at="2024-05-09T09:46:24 CDT" duration-ms="124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SDFCLogin.verifyLoginToSalesForce_TC02() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postConditions -->
+        <test-method is-config="true" signature="postConditions(java.lang.reflect.Method)[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:27 CDT" name="postConditions" finished-at="2024-05-09T09:46:28 CDT" duration-ms="187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SDFCLogin.verifyRemeberMeCheckBox_TC03() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postConditions -->
+        <test-method is-config="true" signature="tearDownConfigReport()[pri:0, instance:tests.SDFCLogin@6f0ca692]" started-at="2024-05-09T09:46:28 CDT" name="tearDownConfigReport" finished-at="2024-05-09T09:46:28 CDT" duration-ms="661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownConfigReport -->
+      </class> <!-- tests.SDFCLogin -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
